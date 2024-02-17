@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightPink: hsl(275, 100%, 97%);
+  --GrayishPurple: hsl(292, 16%, 49%);
+  --DarkPurple: hsl(292, 42%, 14%);
+  --WorkSan: "Work Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--LightPink);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word; /* see how this comes out*/
+}
+
+/* Set body defaults */
+body {
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  background-color: var(--LightPink);
+  /* center demo content on the screen 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+span {
+  font-size: 56px;
+}
+
+h1 {
+  font-size: 1.125rem;
+  font-family: var(--WorkSan);
+  color: var(--DarkPurple);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--GrayishPurple);
+}
+
+main {
+  margin-left: 15px;
+  margin-right: 15px;
+
+  position: relative;
+}
+.faq-container {
+  position: absolute;
+  top: -80px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+header {
+  display: flex;
+  gap: 1em;
+}
+
+.heading-symbol-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.none {
+  display: none;
+}
+
+hr {
+  color: var(--LightPink);
+  margin-top: 20px;
+}
+
+.title-click:hover {
+  cursor: pointer;
+  color: #ad28eb;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
